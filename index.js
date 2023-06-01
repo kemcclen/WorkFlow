@@ -15,9 +15,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // Connect to the local database
 const db = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'rodrigues',
+  //enter host details 
+  host: '',
+  user: '',
+  //enter host password
+  password: '',
   database: 'workflow_db',
 });
 
@@ -72,3 +74,56 @@ function init() {
     });
  }
  
+// View all departments
+ function viewAllDepartments() {
+  db.query('SELECT * FROM department', function (err, results) {
+    console.table(results);
+    init();
+  })
+ };
+ 
+ 
+ // View all roles
+ function viewAllRoles() {
+  db.query('SELECT * FROM role', function (err, results) {
+    console.table(results);
+    init();
+  })
+ };
+ 
+ 
+ // View all employees
+ function viewAllEmployees() {
+  db.query('SELECT * FROM employee', function (err, results) {
+    console.table(results);
+    init();
+  })
+ };
+ 
+ // Add a department
+ function addDepartment() {
+  
+ }
+ 
+ // Add a role
+ function addRole() {
+  
+ }
+ 
+ // Add an employee
+ function addEmployee() {
+  
+ }
+ 
+ // Update an employee role
+ function updateEmployeeRole() {
+  
+ }
+ 
+ // Set up server to listen on PORT
+ app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+ });
+
+ //Run it!
+init();
