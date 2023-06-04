@@ -16,10 +16,10 @@ app.use(express.urlencoded({ extended: true }));
 // Connect to the local database
 const db = mysql.createConnection({
   //enter host details
-  host: "127.0.0.1",
+  host: "",
   user: "root",
   //enter host password
-  password: "rodrigues",
+  password: "",
   database: "workflow_db",
 });
 
