@@ -59,7 +59,10 @@ After you have followed the steps in [Installation](#installation):
 3. **Added and Updated** an employee, which was updated in the view employees option as well
 ![WorkFlow3](/assets/WorkFlow3.png)
 
-![WorkFlowDemo](/assets/WorkFlowDemo.mov)
+
+
+https://github.com/kemcclen/WorkFlow/assets/123762040/494651d7-8148-40be-a2fb-1ac82c475ffd
+
 
 ## Contributions: 
 
